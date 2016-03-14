@@ -5,4 +5,5 @@
 I'm George.
 
 • first item in a list
+
 • second item in a list
