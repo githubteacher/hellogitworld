@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "39be40e2-da76-4b06-a684-6b52d3048419",
+		"name": "Lorem Ipsum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "credentials",
+			"item": [
+				{
+					"name": "get Credentials",
+					"_postman_id": "b18031db-d460-436f-93a1-7228f304d201",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/credentials?offset=-62098813&limit=-62098813",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"credentials"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "-62098813",
+									"description": "This offsets the start of each page by the number specified. Max offset is 100k."
+								},
+								{
+									"key": "limit",
+									"value": "-62098813",
+									"description": "This is the maximum number of objects that may be returned. A query may return fewer than the value of limit due to filtering. Default limit is 20. Max limit is 2000."
+								}
+							]
+						},
+						"description": "Gets credentials"
+					},
+					"response": [
+						{
+							"id": "404c3c47-e5e1-408a-b560-99214fef8cb4",
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/credentials?offset=-62098813&limit=-62098813",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"credentials"
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "-62098813"
+										},
+										{
+											"key": "limit",
+											"value": "-62098813"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"credentials\": [\n    {\n      \"id\": \"dolore\",\n      \"tenantID\": \"ut Duis voluptate\",\n      \"locationID\": \"Lorem consequat\",\n      \"sourceID\": \"Excepteur dolor\",\n      \"username\": \"ut magna\",\n      \"password\": \"dolore sint\",\n      \"valid\": true,\n      \"verificationDetails\": {\n        \"question\": \"occaecat irure dolor\",\n        \"answer\": \"veniam in eiusmod\"\n      }\n    },\n    {\n      \"id\": \"pariatur nulla fugiat\",\n      \"tenantID\": \"sed reprehenderit ullamco non\",\n      \"locationID\": \"aute volu\",\n      \"sourceID\": \"in mollit do esse nisi\",\n      \"username\": \"ex culpa voluptate off\",\n      \"password\": \"Ut sunt ullamco qui laboris\",\n      \"valid\": true,\n      \"verificationDetails\": {\n        \"question\": \"ut Lorem fugiat\",\n        \"answer\": \"velit sint ex\"\n      }\n    }\n  ],\n  \"paging\": {\n    \"value\": \"reference #/components/schemas/Paging not found in the OpenAPI spec\"\n  }\n}"
+						}
+					]
+				},
+				{
+					"name": "save Credential",
+					"_postman_id": "e3957aba-68f6-41c1-aff3-cbb48e2c89e7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"laboris\",\n  \"locationID\": \"nostru\",\n  \"sourceID\": \"in elit qui sit\",\n  \"username\": \"commodo elit nulla Lorem\",\n  \"password\": \"irure\",\n  \"valid\": false,\n  \"verificationDetails\": {\n    \"question\": \"fugiat qui ipsum Duis et\",\n    \"answer\": \"ea tempor ut\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/credentials",
+						"description": "Saves credentials"
+					},
+					"response": [
+						{
+							"id": "0c43f3d2-d5ff-4f26-8d16-369c193c4d2c",
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"laboris\",\n  \"locationID\": \"nostru\",\n  \"sourceID\": \"in elit qui sit\",\n  \"username\": \"commodo elit nulla Lorem\",\n  \"password\": \"irure\",\n  \"valid\": false,\n  \"verificationDetails\": {\n    \"question\": \"fugiat qui ipsum Duis et\",\n    \"answer\": \"ea tempor ut\"\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/credentials"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"id\": \"quis proident do ipsum\",\n  \"tenantID\": \"in ullamco pariatur occaecat\",\n  \"locationID\": \"eu occaecat eiusmod nisi consectetur\",\n  \"sourceID\": \"aliquip\",\n  \"username\": \"labore\",\n  \"password\": \"nostrud aliquip\",\n  \"valid\": true,\n  \"verificationDetails\": {\n    \"question\": \"minim consequat\",\n    \"answer\": \"magna ipsum \"\n  }\n}"
+						}
+					]
+				},
+				{
+					"name": "get Credential",
+					"_postman_id": "c134cac5-0aa6-43f1-a549-ce2d27c82f46",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/credentials/:credentialID",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"credentials",
+								":credentialID"
+							],
+							"variable": [
+								{
+									"id": "5af9f566-59f4-4363-b414-08b533caf75c",
+									"key": "credentialID",
+									"value": "adipisicing dolore nulla",
+									"description": "(Required) Credential id",
+									"type": "string"
+								}
+							]
+						},
+						"description": "Gets credential"
+					},
+					"response": [
+						{
+							"id": "42e64b15-6f23-41af-860f-aceb0fc38ffb",
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/credentials/:credentialID",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"credentials",
+										":credentialID"
+									],
+									"variable": [
+										{
+											"key": "credentialID",
+											"value": "adipisicing dolore nulla",
+											"description": "(Required) Credential id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"id\": \"quis proident do ipsum\",\n  \"tenantID\": \"in ullamco pariatur occaecat\",\n  \"locationID\": \"eu occaecat eiusmod nisi consectetur\",\n  \"sourceID\": \"aliquip\",\n  \"username\": \"labore\",\n  \"password\": \"nostrud aliquip\",\n  \"valid\": true,\n  \"verificationDetails\": {\n    \"question\": \"minim consequat\",\n    \"answer\": \"magna ipsum \"\n  }\n}"
+						}
+					]
+				},
+				{
+					"name": "get Oauth Status",
+					"_postman_id": "4bc59f5f-f8e7-4c9d-a04d-2ec294dbfcdc",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/credentials/oauth",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"credentials",
+								"oauth"
+							],
+							"variable": [
+								{
+									"id": "862efd13-634b-4fac-9893-a68db17dfc32",
+									"key": "locationIDs",
+									"value": "adipisicing dolore nulla",
+									"description": "(Required) Location id",
+									"type": "string"
+								},
+								{
+									"id": "ffb95f79-748e-4f8f-844d-d2c547e0d0ba",
+									"key": "sourceIDs",
+									"value": "adipisicing dolore nulla",
+									"description": "(Required) Source id",
+									"type": "string"
+								}
+							]
+						},
+						"description": "Gets oauth status"
+					},
+					"response": [
+						{
+							"id": "4752ef99-5707-4519-9b67-bd0a71807230",
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/credentials/oauth",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"credentials",
+										"oauth"
+									],
+									"variable": [
+										{
+											"key": "locationIDs",
+											"value": "adipisicing dolore nulla",
+											"description": "(Required) Location id"
+										},
+										{
+											"key": "sourceIDs",
+											"value": "adipisicing dolore nulla",
+											"description": "(Required) Source id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n  {\n    \"locationID\": \"occaecat irure dolore veniam ut\"\n  },\n  {\n    \"locationID\": \"quis dolore consectetur reprehenderit\"\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "get Password Status",
+					"_postman_id": "230dab18-32bc-4598-8f90-7ca9c994e481",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/credentials/password",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"credentials",
+								"password"
+							],
+							"variable": [
+								{
+									"id": "dffddd3b-f872-4a00-81de-6dbdb68226e9",
+									"key": "locationIDs",
+									"value": "adipisicing dolore nulla",
+									"description": "(Required) Location id",
+									"type": "string"
+								},
+								{
+									"id": "651fc858-a979-462e-93ff-8f195be60adf",
+									"key": "sourceIDs",
+									"value": "adipisicing dolore nulla",
+									"description": "(Required) Source id",
+									"type": "string"
+								}
+							]
+						},
+						"description": "Gets password status"
+					},
+					"response": [
+						{
+							"id": "c9f2476f-8bda-4952-b2b6-cc4054295cfd",
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/credentials/password",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"credentials",
+										"password"
+									],
+									"variable": [
+										{
+											"key": "locationIDs",
+											"value": "adipisicing dolore nulla",
+											"description": "(Required) Location id"
+										},
+										{
+											"key": "sourceIDs",
+											"value": "adipisicing dolore nulla",
+											"description": "(Required) Source id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n  {\n    \"locationID\": \"pariatur quis cillum adipisicing\"\n  },\n  {\n    \"locationID\": \"dolore ullamco enim irure laborum\"\n  }\n]"
+						}
+					]
+				}
+			],
+			"_postman_id": "4c87f03f-44e5-4e2c-91cc-482053f3670a"
+		}
+	],
+	"variable": [
+		{
+			"id": "9883a6f7-a737-423b-ae90-51a6a2d34152",
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
