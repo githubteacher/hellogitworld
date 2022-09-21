@@ -104,7 +104,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": \"laboris\",\n  \"locationID\": \"nostru\",\n  \"sourceID\": \"in elit qui sit\",\n  \"username\": \"commodo elit nulla Lorem\",\n  \"password\": \"irure\",\n  \"valid\": false,\n  \"verificationDetails\": {\n    \"question\": \"fugiat qui ipsum Duis et\",\n    \"answer\": \"ea tempor ut\"\n  }\n}",
+							"raw": "{\n  \"id\": \"laboris\",\n  \"locationID\": \"nostru\",\n  \"sourceID\": \"in elit qui sit\",\n  \"username\": \"commodo elit nulla Lorem\",\n  \"password\": \"irure\",\n  \"valid\": false,\n  \"verificationDetails\": {\n    \"question\": \"fugiat qui ipsum Duis et\",\n    \"answer\": \"ea tempor ut\",\n    \"answer\": \"ea tempor ut\"\n  }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -370,12 +370,6 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
 							"header": [
 								{
 									"key": "Content-Type",
