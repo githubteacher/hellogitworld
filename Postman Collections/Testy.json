@@ -376,6 +376,12 @@
 									"value": "application/json"
 								}
 							],
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
 							"cookie": [],
 							"responseTime": null,
 							"body": "[\n  {\n    \"locationID\": \"pariatur quis cillum adipisicing\"\n  },\n  {\n    \"locationID\": \"dolore ullamco enim irure laborum\"\n  }\n]"
